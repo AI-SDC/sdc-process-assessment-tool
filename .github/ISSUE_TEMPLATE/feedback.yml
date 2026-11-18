@@ -1,0 +1,32 @@
+name: Tool feedback
+description: Tell us how the assessment tool worked for you
+labels: [feedback]
+body:
+  - type: markdown
+    attributes:
+      value: Please do not include sensitive or identifying information about your organisation's processes.
+  - type: dropdown
+    id: page
+    attributes:
+      label: Which version did you try?
+      options: [Guided (step-by-step), Flexible (map activities), Both]
+    validations:
+      required: true
+  - type: textarea
+    id: unclear
+    attributes:
+      label: What was confusing or unclear?
+      description: Include any ontology terms, questions or wording that were hard to understand.
+  - type: textarea
+    id: missing
+    attributes:
+      label: What was missing or didn't match your process?
+  - type: dropdown
+    id: useful
+    attributes:
+      label: Did it help you assess your process?
+      options: [Yes, Partly, No]
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else?
